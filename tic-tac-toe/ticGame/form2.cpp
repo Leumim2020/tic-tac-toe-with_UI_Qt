@@ -295,7 +295,7 @@ void form2::matrizLevel_one(QMessageBox::StandardButton player,int current_posit
                     victory_player_X+=1;
                     vx.setNum(victory_player_X);
                     ui->pushBtn_victorys_X->setText(vx);
-                    QMessageBox::information(this,"Informação","Jogador X ganhou");
+                    QMessageBox::information(this,"Information","Player X Won");
 
 
              }else if((m[0][0] == "O" && m[0][1] == "O" && m[0][2] == "O" && m[0][3] == "O") || (m[1][0] == "O" && m[1][1] == "O" && m[1][2] == "O" && m[1][3] == "O")||
@@ -307,7 +307,7 @@ void form2::matrizLevel_one(QMessageBox::StandardButton player,int current_posit
                      victory_player_O +=1;
                      vo.setNum(victory_player_O);
                      ui->pushBtn_victorys_O->setText(vo);
-                     QMessageBox::information(this,"Informação","Jogador 0 ganhou");
+                     QMessageBox::information(this,"Information","Player O Won");
 
              }
 // end verify------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -318,6 +318,7 @@ void form2::matrizLevel_one(QMessageBox::StandardButton player,int current_posit
             _ties_XO.setNum(_ties);
              ui->pushBtn_ties_X->setText(_ties_XO);
              ui->pushBtn_ties_O->setText(_ties_XO);
+             QMessageBox::information(this,"information","Game ties");
         }
     }
 // end verification-------------------------------------------------------------------------------------------------------------------------------------------------------
