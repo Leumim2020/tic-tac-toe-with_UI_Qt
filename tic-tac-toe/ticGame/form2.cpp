@@ -318,7 +318,7 @@ void form2::matrizLevel_one(QMessageBox::StandardButton player,int current_posit
             _ties_XO.setNum(_ties);
              ui->pushBtn_ties_X->setText(_ties_XO);
              ui->pushBtn_ties_O->setText(_ties_XO);
-             QMessageBox::information(this,"information","Game ties");
+             QMessageBox::information(this,"Information","Game ties");
         }
     }
 // end verification-------------------------------------------------------------------------------------------------------------------------------------------------------
